@@ -276,7 +276,7 @@ bcftools merge -m both  M1/M1.OnlyPASS_DP10_GQ20.MultiSplit.SNPsInDels.RawID.bcf
 ```
 bcftools annotate --set-id '%CHROM\_%POS\_%REF\_%ALT' Merged.RNASeq_D90v2_wREfs.vcf.gz -Oz -o Merged.renamedID.RNASeq_D90v2_wREfs.vcf.gz
 
-bcftools filter -S . -e 'FMT/DP<10 | FMT/GQ<20' Merged.renamedID.RNASeq_D90v2_wREfs.vcf.gz -Ou | bcftools filter -e 'F_MISSING > 0.1'-Oz -o RNASeq.renamedID.RNASeq_D90v2_wREfs.DP10_GQ20_CR90.vcf.gz --threads 10
+bcftools filter -S . -e 'FMT/DP<10 | FMT/GQ<20' Merged.renamedID.RNASeq_D90v2_wREfs.vcf.gz -Oz -o RNASeq.renamedID.DP10_GQ20.RNASeq_D60_wREfs.vcf.gz --threads 10
 
 ```
 
