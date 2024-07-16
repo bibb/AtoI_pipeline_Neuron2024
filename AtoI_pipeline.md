@@ -380,7 +380,7 @@ cut -f2- AllPossibleSites.1Missing.wID.txt | sed 's/\./NA/g' > AllPossibleSites.
 
 ````
 
-#### Processed in Excel. Here the allele dosage of allele 1 is divided by the allele dosage of allele 2. In the file, we will have 16 columns, where each consecutive pair represent a single editing site with their allele dosages for allele 1 and allele2. The final result will have 8 columns with each being the quotient of the division of each site.
+#### Processed in Excel. Here the allele dosage of allele 2 is divided by the sum of the dosage of allele 1 and the dosage of allele 2 (a2/a1+a2). In the file, we will have 16 columns, where each consecutive pair represent a single editing site with their allele dosages for allele 1 and allele 2. The final result will have 8 columns with each being the quotient of the division of each site.
 
 ````
 File = AllPossibleSites.1Missing.wID.Processed.txt 9983 vars
